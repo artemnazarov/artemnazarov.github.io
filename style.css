@@ -1,0 +1,445 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Rubik+Mono+One);
+@import url(http://fonts.googleapis.com/css?family=Podkova);
+@import url(http://fonts.googleapis.com/css?family=Palanquin+Dark);
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 3px 10px -2px rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav ul {
+	list-style: none;
+	position: relative;
+	float: right;
+	margin-right: 100px;
+	display: inline-table;
+}
+
+nav ul li {
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+nav ul li:hover {
+	background: rgba(0, 0, 0, .15);
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+nav ul li {
+	float: left;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+nav ul li a {
+	display: block;
+	padding: 30px 20px;
+	color: #222;
+	font-size: .9em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.li_arrow {
+	width: 16px;
+	height: 14px;
+}
+
+#logo_menu {
+	padding: 0px 100px;
+}
+
+.menu li:hover li,
+.menu ul li:hover li,
+.menu ul ul li:hover li {
+	display: block;
+}
+
+nav ul ul {
+	display: none;
+	background: #fff;
+	position: absolute;
+	top: 100%;
+	box-shadow: -3px 3px 10px -2px rgba(0, 0, 0, .1);
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav ul ul li {
+	float: none;
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 30px;
+	border-bottom: 1px solid rgba(0, 0, 0, .05);
+}
+
+nav ul ul ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#brands_div {
+	position: relative;
+}
+
+#brands_table {
+	border-collapse: collapse;
+	margin-left: 5%;
+	margin-right: 5%;
+	width: 100%;
+}
+
+#brands_table td {
+	border: 20px solid white;
+}
+
+.header_content {
+	position: static;
+	width: 1300px;
+	margin: 30px auto;
+	font-family: 'Rubik Mono One', cursive;
+	font-size: 45pt;
+	color: #1ca4c9;
+	text-align: center;
+}
+
+.index {
+	width: 900px;
+}
+
+#categ {
+	width: 900px;
+}
+
+.viewport {
+	width: 70%;
+	height: 300px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.slidewrapper {
+	position: relative;
+	left: 0;
+	top: 0;
+	height: 140px;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+}
+
+.slide {
+	width: 150px;
+	height: 140px;
+	align-content: center;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+#feedback {
+	width: 740px;
+}
+
+#left_arr {
+	left: 80px;
+}
+
+#right_arr {
+	right: 80px;
+}
+
+.arrow {
+	position: absolute;
+	top: 430px;
+}
+
+.arrow:hover {
+	background: rgba(0, 0, 0, .15);
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.arrow-img-cont {
+	width: 150px;
+	height: 140px;
+	align-content: center;
+}
+
+#categories {
+	width: 100px;
+	align-content: center;
+	height: 300px;
+	border-collapse: collapse;
+	border: 20px solid;
+}
+
+#cat_table {
+	position: relative;
+	width: 1400px;
+	margin: auto;
+}
+
+.tr1 {
+	text-align: center;
+}
+
+.tr1 td {
+	background-color: #1ca4c9;
+	color: white;
+	font-family: 'Rubik Mono One', cursive;
+	font-size: 20pt;
+	border: 100px solid;
+}
+
+.tr1 td {}
+
+#feedback_form {
+	width: 400px;
+	height: 702px;
+	margin: auto;
+	position: static;
+}
+
+.form-container {
+	border: 1px solid #ffb700;
+	background: #0099b0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#7dc2f0), to(#0099b0));
+	background: -webkit-linear-gradient(top, #7dc2f0, #0099b0);
+	background: -moz-linear-gradient(top, #7dc2f0, #0099b0);
+	background: -ms-linear-gradient(top, #7dc2f0, #0099b0);
+	background: -o-linear-gradient(top, #7dc2f0, #0099b0);
+	background-image: -ms-linear-gradient(top, #7dc2f0 0%, #0099b0 100%);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+	-moz-box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+	box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 0px 0;
+	font-family: 'Rubik Mono One', cursive;
+	text-decoration: none;
+	vertical-align: middle;
+	min-width: 100px;
+	padding: 20px;
+	width: 400px;
+}
+
+.form-field {
+	border: 1px solid #ff8800;
+	background: #e08f38;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #ffffff;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+	-moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+	box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+	padding: 8px;
+	margin-bottom: 20px;
+	width: 340px;
+}
+
+.form-field:focus {
+	background: #fff;
+	color: #111940;
+}
+
+.form-container h2 {
+	font-family: 'Rubik Mono One', cursive;
+	text-shadow: #3c478a 0 1px 0;
+	font-size: 18pt;
+	margin: 0 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.form-title {
+	margin-bottom: 10px;
+	color: #ffffff;
+	text-shadow: #3c478a 0 1px 0;
+	font-family: 'Rubik Mono One', cursive;
+}
+
+.submit-container {
+	margin: 8px 0;
+	text-align: right;
+}
+
+.submit-button {
+	border: 1px solid #00477d;
+	background: #1c528c;
+	background: -webkit-gradient(linear, left top, left bottom, from(#13d4ed), to(#1c528c));
+	background: -webkit-linear-gradient(top, #13d4ed, #1c528c);
+	background: -moz-linear-gradient(top, #13d4ed, #1c528c);
+	background: -ms-linear-gradient(top, #13d4ed, #1c528c);
+	background: -o-linear-gradient(top, #13d4ed, #1c528c);
+	background-image: -ms-linear-gradient(top, #13d4ed 0%, #1c528c 100%);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+	-moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+	box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+	text-shadow: #005c50 0 1px 0;
+	color: #fafff5;
+	font-family: 'Rubik Mono One', cursive;
+	padding: 8.5px 18px;
+	font-size: 14px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.submit-button:hover {
+	border: 1px solid #805e07;
+	text-shadow: #523e0c 0 1px 0;
+	background: #b86c14;
+	background: -webkit-gradient(linear, left top, left bottom, from(#e08f38), to(#b86c14));
+	background: -webkit-linear-gradient(top, #e08f38, #b86c14);
+	background: -moz-linear-gradient(top, #e08f38, #b86c14);
+	background: -ms-linear-gradient(top, #e08f38, #b86c14);
+	background: -o-linear-gradient(top, #e08f38, #b86c14);
+	background-image: -ms-linear-gradient(top, #e08f38 0%, #b86c14 100%);
+	color: #fff;
+}
+
+.submit-button:active {
+	text-shadow: #31540c 0 1px 0;
+	border: 1px solid #447314;
+	background: #8dc059;
+	background: -webkit-gradient(linear, left top, left bottom, from(#6aa436), to(#b86c14));
+	background: -webkit-linear-gradient(top, #6aa436, #8dc059);
+	background: -moz-linear-gradient(top, #6aa436, #8dc059);
+	background: -ms-linear-gradient(top, #6aa436, #8dc059);
+	background: -o-linear-gradient(top, #6aa436, #8dc059);
+	background-image: -ms-linear-gradient(top, #6aa436 0%, #8dc059 100%);
+	color: #fff;
+}
+
+#footer {
+	font-family: 'Lato', sans-serif;
+	position: relative;
+	width: 100%;
+	height: 150px;
+	margin-top: 80px;
+	top: 10px;
+	background-color: #1ca4c9;
+	color: white;
+	text-align: center;
+}
+
+.footer-list li {
+	list-style: none;
+	float: none;
+	display: inline;
+	margin-right: 5px;
+}
+
+.footer-list li a {
+	font-family: 'Roboto Slab', sans-serif;
+	color: aliceblue;
+}
+
+.footer-list li a:hover {
+	background-color: orange;
+	color: #0099b0;
+}
+
+#about-content {
+	width: 800px;
+	height: 300px;
+	margin: 0px auto;
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+.tr1 td a {
+	font-family: 'Rubik Mono One', cursive;
+	color: white;
+	text-decoration: none;
+}
+
+.catalog_block {}
+
+.catalog_table {
+	position: relative;
+	width: 1400px;
+	margin: auto;
+}
+
+.catalog_tr td {
+	font-family: 'Podkova', serif;
+	color: skyblue;
+}
+
+.catalog_tr td a {
+	text-decoration: none;
+	color: skyblue;
+}
+
+.catalog_tr td a img {
+	height: 300px;
+}
+
+.toys_table {
+	width: 900px;
+	margin: 0px auto;
+}
+
+.toys_table tr td {
+	height: 300px;
+	text-align: right;
+	font-family: 'Rubik Mono One', cursive;
+}
+
+.toys_table tr td a:hover {
+	font-family: 'Rubik Mono One', cursive;
+	color: orange;
+	background: rgba(0, 0, 0, .15);
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+.toys_table tr td a {
+	font-family: 'Rubik Mono One', cursive;
+	color: #0099b0;
+}
+
+.toys_table tr td a img {
+	height: 500px;
+}
+
+.price {
+	color: orange;
+	font-family: 'Palanquin Dark', cursive;
+	font-size: 20pt;
+}
