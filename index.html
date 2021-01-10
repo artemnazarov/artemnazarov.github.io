@@ -4,73 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artem Nazarov Web Developer Portfolio</title>
-    <style>
-      *,
-      *:before,
-      *:after {
-        box-sizing: border-box;
-      }
-
-      h1 {
-        margin: 0.6em 0;
-      }
-
-      .avatar {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-      }
-
-      header {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        padding: 50px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-      }
-
-      #main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        min-height: 100vh;
-        font-family: Avenir, Helvetica, Arial, sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-
-      .message {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin-left: 30px;
-      }
-
-      @media all and (min-width: 768px) {
-        header {
-          flex-direction: row;
-          padding: 100px;
-        }
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="main">
       <header>
-        <div>
-          <img
-            class="avatar"
-            src="https://i.ibb.co/R6FfK4n/DSC-3064.jpg"
-            alt="my photo"
-          />
-        </div>
-        <div class="message">
-          <h2>Hello!</h2>
-          <h2>My name is Artem Nazarov.</h2>
-          <h2>I am a full stack web developer.</h2>
+        <div class="header">
+          <div>
+            <img class="avatar" src="assets/avatar.jpg" alt="my photo" />
+          </div>
+          <div class="message">
+            <h2>Hello! My name is Artem Nazarov.</h2>
+            <h2>I am a full stack web developer.</h2>
+          </div>
         </div>
       </header>
+      <section class="section">
+        <h1 class="section__title">What I used at work</h1>
+        <div class="section__body">
+          <div class="techs">
+            <div>
+              <div class="techs__logo">
+                <a href="https://asp.net" target="_blank">
+                  <img
+                    src="assets/net_logo.png"
+                    width="64"
+                    height="32"
+                    alt="ASP.NET logo"
+                /></a>
+              </div>
+              <div>ASP.NET</div>
+            </div>
+            <div>
+              <div class="techs__logo">
+                <a href="https://nodejs.org/" target="_blank">
+                  <img
+                    src="assets/nodejs_logo.png"
+                    width="64"
+                    height="53"
+                    alt="Node.js logo"
+                /></a>
+              </div>
+              <div>Node.js</div>
+            </div>
+            <div>
+              <div class="techs__logo">
+                <a href="https://vuejs.org/" target="_blank">
+                  <img
+                    src="assets/vuejs_logo.png"
+                    width="64"
+                    height="55"
+                    alt="Vue.js logo"
+                /></a>
+              </div>
+              <div>Vue.js</div>
+            </div>
+            <div>
+              <div class="techs__logo">
+                <a href="https://svelte.dev/" target="_blank">
+                  <img
+                    src="assets/sveltejs_logo.png"
+                    width="64"
+                    height="55"
+                    alt="Svelte logo"
+                /></a>
+              </div>
+              <div>Svelte</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section skills">
+        <h1  class="section__title">
+          What I touched besides work for educational purposes
+        </h1>
+        <div class="section__body">
+          <div class="skills-techs">
+            <div>
+              <div class="techs__logo">
+                <a href="https://www.java.com/" target="_blank">
+                  <img
+                    src="assets/java_logo.png"
+                    alt="Java logo"
+                    width="64"
+                    height="64"
+                  />
+                </a>
+              </div>
+              <div>Java</div>
+            </div>
+            <div>
+              <div class="techs__logo">
+                <a href="https://www.android.com" target="_blank"
+                  ><img
+                    src="assets/android_logo.png"
+                    alt="Android logo"
+                    width="102"
+                    height="64"
+                /></a>
+              </div>
+              <div>Android</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
+<!-- src="https://i.ibb.co/R6FfK4n/DSC-3064.jpg" -->
