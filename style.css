@@ -36,6 +36,10 @@ h1 {
   background-color: #f0f0f0;
 }
 
+.header__avatar {
+  align-self: center;
+}
+
 #main {
   display: flex;
   flex-direction: column;
