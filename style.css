@@ -69,6 +69,7 @@ a:visited {
   padding: 50px 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #f0f0f0;
+  height: 100vh;
 }
 
 .header__avatar {
@@ -96,6 +97,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 100vh;
 }
 
 .section__title {
@@ -115,9 +117,16 @@ a:visited {
 .techs {
   display: grid;
   gap: 50px;
-  grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+}
+
+.techs {
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills-techs {
+  grid-template-columns: 1fr;
 }
 
 .techs__logo {
@@ -138,9 +147,23 @@ a:visited {
   align-items: center;
 }
 
+.section-links .section__title {
+  padding: 2rem 1.5rem;
+}
+
+.section-links h1 {
+  margin: 0;
+}
+
 @media all and (min-width: 768px) {
   .header {
     flex-direction: row;
+    height: 50vh;
+  }
+
+  .section {
+    height: 50vh;
+    min-height: auto;
   }
 
   .techs {
@@ -153,6 +176,14 @@ a:visited {
 
   .links {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .section-links .section__title {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-links h1 {
+    margin: 0.6rem 0;
   }
 
 }
