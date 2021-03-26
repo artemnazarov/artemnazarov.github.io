@@ -118,7 +118,15 @@ a:visited {
 }
 
 .skills {
-  background-color: #f2ffff;
+  background-color: #fafafa;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
 }
 
 @media all and (min-width: 768px) {
@@ -133,12 +141,9 @@ a:visited {
   .skills-techs {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-.links {
-  display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
-  align-items: center;
+  .links {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
 }
