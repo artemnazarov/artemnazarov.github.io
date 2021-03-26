@@ -39,6 +39,15 @@ a:visited {
   color: #000;
 }
 
+a:link,
+a:hover,
+a:visited:hover,
+a:focus,
+a:active,
+a:visited {
+  transition: 0.3s ease-in-out;
+}
+
 .color-gray {
   color: #ddd;
 }
