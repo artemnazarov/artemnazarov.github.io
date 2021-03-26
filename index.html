@@ -7,9 +7,12 @@
   <title>Artem Nazarov Web Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.0/dist/fullpage.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.0/dist/fullpage.min.js"></script>
 </head>
 
 <body>
+
   <div id="main">
     <header>
       <div class="header">
@@ -24,6 +27,7 @@
       </div>
     </header>
     <section class="section">
+
       <h1 class="section__title">My techs stack</h1>
       <div class="section__body">
         <div class="techs">
@@ -113,6 +117,13 @@
       </div>
     </section>
   </div>
+  <!-- <script type="text/javascript">
+    var myFullpage = new fullpage('#main', {
+      sectionsColor: ['#f0f0f0', '#fff', '#7BAABE', 'whitesmoke', '#ccddff'],
+      anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+      lazyLoad: true
+    });
+  </script> -->
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
@@ -123,7 +134,7 @@
       k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
         a)
     })
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
     ym(74712421, "init", {
       clickmap: true,
