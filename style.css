@@ -13,6 +13,32 @@ h1 {
   margin: 0.6em 0;
 }
 
+*:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #000;
+}
+
+a:hover,
+a:visited:hover {
+  color: #555;
+}
+
+a:focus,
+a:active {
+  color: #333;
+}
+
+a:visited {
+  color: #000;
+}
+
 .color-gray {
   color: #ddd;
 }
@@ -92,7 +118,7 @@ h1 {
 }
 
 .skills {
-  background-color: #d7f5f8;
+  background-color: #f2ffff;
 }
 
 @media all and (min-width: 768px) {
@@ -107,4 +133,12 @@ h1 {
   .skills-techs {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.links {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
 }
