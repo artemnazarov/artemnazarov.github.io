@@ -48,14 +48,6 @@ a:visited {
   transition: 0.3s ease-in-out;
 }
 
-.color-gray {
-  color: #ddd;
-}
-
-.color-white {
-  color: #fff;
-}
-
 .avatar {
   width: 200px;
   height: 200px;
@@ -166,11 +158,11 @@ a:visited {
   }
 
   .techs {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
   .skills-techs {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 
   .links {
@@ -184,5 +176,35 @@ a:visited {
   .section-links h1 {
     margin: 0.6rem 0;
   }
+}
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: #100f13;
+  }
+  .header {
+    background-color: #100f13;
+    color: white;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:hover,
+  a:visited:hover {
+    color: #c0c0c0;
+  }
+
+  a:focus,
+  a:visited:focus,
+  a:active,
+  a:visited:active {
+    color: rgb(170, 170, 170)
+  }
+
+  a:visited {
+    color: #fafafa;
+  }
 }
